@@ -18,8 +18,8 @@ createMarkup(galleryItems);
 
 
 let galleryList = new SimpleLightbox('.gallery a');
-galleryList.on('show.simplelightbox', function (event) {
-    event.preventDefault();
+galleryList.on('show.simplelightbox', function () {
+
 	galleryList.options.captionsData = 'alt';
     galleryList.options.captionsDelay = 250;
     galleryList.enableKeyboard = true;
